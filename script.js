@@ -42,4 +42,9 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
   });
+
+  const currentYear = new Date().getFullYear();
+  document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('currentYear').textContent = currentYear;
+  });
 }
